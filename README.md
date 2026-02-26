@@ -31,32 +31,6 @@ npm run test
 npm run lint
 ```
 
-## Windows PowerShell fix (`*.ps1 is not digitally signed`)
-If you see errors like `npm.ps1 cannot be loaded` or `ng.ps1 cannot be loaded`, PowerShell is blocking script execution.
-
-Use one of these options:
-
-1. **Use CMD shims directly (quickest, no policy change):**
-```powershell
-npm.cmd install
-npm.cmd start
-npx.cmd ng serve
-```
-
-2. **Allow local scripts for current user (recommended for dev machines):**
-```powershell
-Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
-```
-Then restart PowerShell and run:
-```powershell
-npm install
-npm start
-```
-
-3. **Temporary bypass for current shell only:**
-```powershell
-Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-```
 
 ## Project Structure
 
