@@ -25,6 +25,12 @@ App runs at **http://localhost:4200**
 npm run build
 ```
 
+### Run checks
+```bash
+npm run test
+npm run lint
+```
+
 ## Project Structure
 
 ```
@@ -56,7 +62,7 @@ Edit `src/environments/environment.ts`:
 ```typescript
 export const environment = {
   production: false,
-  apiUrl: 'https://localhost:7000/api/v1'
+  apiUrl: '/api/v1'
 };
 ```
 
