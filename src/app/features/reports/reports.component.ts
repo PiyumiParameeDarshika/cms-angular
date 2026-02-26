@@ -1,5 +1,5 @@
 import { Component, inject, OnInit, signal } from '@angular/core';
-import { NgIf, NgFor, DatePipe } from '@angular/common';
+import { NgIf, JsonPipe } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { ReportService } from '@core/services/report.service';
 import { ReportFilterRequest } from '@core/models/report.model';
@@ -7,7 +7,7 @@ import { ReportFilterRequest } from '@core/models/report.model';
 @Component({
   selector: 'app-reports',
   standalone: true,
-  imports: [NgIf, NgFor, DatePipe, FormsModule],
+  imports: [NgIf, JsonPipe, FormsModule],
   template: `
     <div class="page-header">
       <div><h2 class="page-title">Reports</h2><p class="page-sub">Complaint analytics and summaries</p></div>

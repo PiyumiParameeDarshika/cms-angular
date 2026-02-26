@@ -1,6 +1,6 @@
 import { Component, inject, OnInit, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { NgIf, NgFor, DatePipe } from '@angular/common';
+import { NgIf, NgFor, DatePipe, SlicePipe } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { ComplaintService } from '@core/services/complaint.service';
 import { AuthService } from '@core/services/auth.service';
@@ -10,7 +10,7 @@ import { PagedResult } from '@core/models/api-response.model';
 @Component({
   selector: 'app-complaints-list',
   standalone: true,
-  imports: [RouterLink, NgIf, NgFor, DatePipe, FormsModule],
+  imports: [RouterLink, NgIf, NgFor, DatePipe, SlicePipe, FormsModule],
   template: `
     <div class="page-header">
       <div>
