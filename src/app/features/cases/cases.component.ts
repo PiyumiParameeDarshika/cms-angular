@@ -1,7 +1,6 @@
 import { Component, inject, OnInit, signal, Input } from '@angular/core';
 import { NgIf, NgFor, DatePipe } from '@angular/common';
 import { ReactiveFormsModule, FormBuilder, Validators } from '@angular/forms';
-import { RouterLink } from '@angular/router';
 import { CaseService } from '@core/services/case.service';
 import { AuthService } from '@core/services/auth.service';
 import { Case, CaseActivity } from '@core/models/case.model';
@@ -9,7 +8,7 @@ import { Case, CaseActivity } from '@core/models/case.model';
 @Component({
   selector: 'app-cases',
   standalone: true,
-  imports: [NgIf, NgFor, DatePipe, ReactiveFormsModule, RouterLink],
+  imports: [NgIf, NgFor, DatePipe, ReactiveFormsModule],
   template: `
     <div class="page-header">
       <div><h2 class="page-title">Case Detail</h2><p class="page-sub">Case activities and status</p></div>

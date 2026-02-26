@@ -1,5 +1,5 @@
 import { Component, inject, OnInit, signal } from '@angular/core';
-import { NgIf, NgFor, DecimalPipe } from '@angular/common';
+import { NgIf, NgFor } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { ReportService } from '@core/services/report.service';
 import { AuthService } from '@core/services/auth.service';
@@ -8,7 +8,7 @@ import { DashboardData } from '@core/models/report.model';
 @Component({
   selector: 'app-dashboard',
   standalone: true,
-  imports: [NgIf, NgFor, DecimalPipe, RouterLink],
+  imports: [NgIf, NgFor, RouterLink],
   template: `
     <div class="page-header">
       <div>

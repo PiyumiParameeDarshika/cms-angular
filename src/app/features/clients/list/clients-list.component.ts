@@ -1,6 +1,6 @@
 import { Component, inject, OnInit, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { NgIf, NgFor, DatePipe } from '@angular/common';
+import { NgIf, NgFor } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { ClientService } from '@core/services/client.service';
 import { AuthService } from '@core/services/auth.service';
@@ -10,7 +10,7 @@ import { PagedResult } from '@core/models/api-response.model';
 @Component({
   selector: 'app-clients-list',
   standalone: true,
-  imports: [RouterLink, NgIf, NgFor, DatePipe, FormsModule],
+  imports: [RouterLink, NgIf, NgFor, FormsModule],
   template: `
     <div class="page-header">
       <div>
